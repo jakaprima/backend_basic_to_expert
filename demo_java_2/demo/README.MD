@@ -1,0 +1,3 @@
+RUN SERVER
+./gradlew bootRun
+

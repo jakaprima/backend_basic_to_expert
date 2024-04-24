@@ -5,3 +5,6 @@ jadi saat lain waktu ketika client request informasi yang sama. daripada mengamb
 keuntungan caching adalah meningkatkan performance dengan mengurangi beban pemrosesan
 
 # REDIS
+Redis is an open source BSD licensed, in memory data structure store used as a database, cache, message broker, dan streaming engine.
+structure data:
+strings, hashes, list, sets, sorted sets

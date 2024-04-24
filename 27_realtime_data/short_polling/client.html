@@ -1,0 +1,23 @@
+<html>
+<body>
+body
+</body>
+<script>
+function shortPolling() {
+    fetch('http://localhost:5000//short_polling')
+        .then(response => response.json())
+        .then(data => {
+            if (data) {
+                console.log("Received data:", data);
+                // Update UI or process data here
+            }
+        })
+        .catch(error => console.error(error))
+        .finally(() => {
+            setTimeout(shortPolling, 2000); // Schedule next poll after 2 seconds
+        });
+}
+shortPolling();
+
+</script>
+</html>

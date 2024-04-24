@@ -1,0 +1,28 @@
+<html>
+<body>
+body
+</body>
+<script>
+    function longPolling() {
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', 'http://localhost:5000/long_polling', true);
+        xhr.timeout = 5000;
+
+        xhr.onload = function () {
+            if (this.status === 200) {
+                var data = JSON.parse(this.responseText);
+                // Process the received data (update UI, etc.)
+                if (data) {
+                    // Use the received data
+                    console.log("Received data:", data);
+                }
+                longPolling(); // Call longPolling again for continuous polling
+            }
+        };
+
+        xhr.send();
+    }
+    longPolling()
+
+</script>
+</html>
