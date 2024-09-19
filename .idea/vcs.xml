@@ -3,5 +3,6 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/13_ci_cd/github_ci_cd_examples" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/31_firebase/quickstart-js" vcs="Git" />
   </component>
 </project>
